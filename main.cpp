@@ -9,6 +9,7 @@
 #include <string>
 #include <cstdlib> // Pro funkci system()
 #include <filesystem>
+#include <fstream>
 
 
 std::string convertCommand(const std::string& windowsCommand) {
@@ -36,6 +37,9 @@ std::string convertCommand(const std::string& windowsCommand) {
     }
     else if (command == "ping") {
         return "traceroute " + params;
+    }
+    else if (command == "start") {
+        return "open -a " + params;
     }
     // Vracení výchozí hodnoty, když žádná podmínka neplatí
     return windowsCommand;
