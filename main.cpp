@@ -41,6 +41,12 @@ std::string convertCommand(const std::string& windowsCommand) {
     else if (command == "start") {
         return "open -a " + params;
     }
+    else if (command == "shutdown") {
+        return "alias sd='sleep 10; nohup shutdown -h now & exit'" + params;
+    }
+    else if (command == "cls") {
+        return "clear " + params;
+    }
     // Vracení výchozí hodnoty, když žádná podmínka neplatí
     return windowsCommand;
 }
@@ -48,9 +54,9 @@ std::string convertCommand(const std::string& windowsCommand) {
 
 int main() {
     // něco na úvod
-    std::cout << "=======================================" << std::endl;
+    std::cout << "==================================================" << std::endl;
     std::cout << "WinCMD - Run Windows command on Mac. Now and fast." << std::endl;
-    std::cout << "=======================================" << std::endl;
+    std::cout << "==================================================" << std::endl;
     
     std::string windowsCommand;
 
