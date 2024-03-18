@@ -9,4 +9,10 @@ md(mkdir) <br>
 <hr>
 <h2>1.0.1</h2>
 NEW COMMANDS! <br>
-start(open)
+start(open) <br>
+<hr>
+<h2>1.1</h2>
+NEW COMMANDS! <br>
+cls(clear) <br>
+<i>Shutdown - BETA, do not try it on real PC!</i>
+
