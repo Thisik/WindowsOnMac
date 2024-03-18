@@ -31,7 +31,12 @@ std::string convertCommand(const std::string& windowsCommand) {
     } else if (command == "help") {
         std::cout << "List of supported commands is on request. DM me on Github" << std::endl;
     }
-    
+    else if (command == "md") {
+        return "mkdir " + params;
+    }
+    else if (command == "ping") {
+        return "traceroute " + params;
+    }
     // Vracení výchozí hodnoty, když žádná podmínka neplatí
     return windowsCommand;
 }
