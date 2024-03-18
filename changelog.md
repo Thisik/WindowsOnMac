@@ -8,4 +8,5 @@ ping(traceroute) <br>
 md(mkdir) <br>
 <hr>
 <h2>1.0.1</h2>
-<b>COMING SOON!</b>
+NEW COMMANDS! <br>
+start(open)
